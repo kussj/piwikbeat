@@ -1,0 +1,4 @@
+beat_name: piwikbeat
+beat_url: 'https://github.com/kussj'
+beat_repo: 'github.com/kussj'
+beat_description: Sends piwikbeat metrics to Logstash or directly to Elasticsearch.

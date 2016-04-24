@@ -1,0 +1,23 @@
+################### Piwikbeat Configuration Example #########################
+
+############################# Piwikbeat ######################################
+
+piwikbeat:
+  # Defines how often an event is sent to the output
+  period: 30s
+  url: "https://demo.piwik.org"
+  site_id: 7
+  token: "anonymous"
+  methods: 
+    -
+      method: "SitesManager.getSiteUrlsFromId"
+      parameters:
+    - 
+      method: "Live.getCounters"
+      parameters:
+        lastMinutes: 30
+    - 
+      method: "VisitsSummary.getUniqueVisitors"
+      parameters:
+        period: "month"
+        date: "today"

@@ -1,0 +1,5 @@
+= Piwikbeat Docs
+
+Welcome to the Piwikbeat documentation.
+
+
